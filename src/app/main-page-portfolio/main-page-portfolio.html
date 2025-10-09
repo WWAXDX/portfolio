@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-column-page">
+
+    <!-- Profile Section -->
+    <div class="profile-section-wrapper">
+      <div class="profile-section">
+        <div class="profile-info">
+          <h1 class="profile-name">Abdullah</h1>
+          <p class="profile-subtitle">Web Developer & Designer</p>
+          <p class="profile-description">
+            Passionate about creating beautiful and functional web experiences. 
+            Specialized in modern web technologies including Angular, TypeScript, and responsive design.
+          </p>
+        </div>
+        
+        <div class="profile-image-container">
+          <div class="profile-circle-big d-flex align-items-center justify-content-center bg-light border rounded-circle">
+            <i class="bi bi-person"></i>
+          </div>
+          <div class="profile-socials d-flex justify-content-center mt-3 gap-2">
+            <a class="profile-social-link" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="profile-social-link" href="https://github.com/WWAXDX" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a class="profile-social-link" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <h1 class="section-title">Skills</h1>
+      <hr class="separator">
+      <div class="skills-grid">
+        <a href="https://www.typescriptlang.org/" target="_blank" class="skill-card border-ts">
+          <div class="skill-header">
+            <i class="bi bi-filetype-tsx skill-icon" style="color:#3178c6"></i>
+            <span class="skill-name">TypeScript</span>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress" style="width: 55%; background-color: #3178c6;"></div>
+          </div>
+          <p class="skill-desc">Strongly typed programming language built on JavaScript</p>
+        </a>
+        
+        <a href="https://angular.io/" target="_blank" class="skill-card border-angular">
+          <div class="skill-header">
+            <i class="bi bi-circle-fill skill-icon" style="color:#dd0031"></i>
+            <span class="skill-name">Angular</span>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress" style="width: 40%; background-color: #dd0031;"></div>
+          </div>
+          <p class="skill-desc">Platform for building mobile and desktop web apps</p>
+        </a>
+        
+        <a href="https://git-scm.com/" target="_blank" class="skill-card border-git">
+          <div class="skill-header">
+            <i class="bi bi-git skill-icon" style="color:#f14e32"></i>
+            <span class="skill-name">Git</span>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress" style="width: 55%; background-color: #f14e32;"></div>
+          </div>
+          <p class="skill-desc">Version control system for tracking code changes</p>
+        </a>
+        
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-card border-html">
+          <div class="skill-header">
+            <i class="bi bi-filetype-html skill-icon" style="color:#e34c26"></i>
+            <span class="skill-name">HTML</span>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress" style="width: 85%; background-color: #e34c26;"></div>
+          </div>
+          <p class="skill-desc">Standard markup language for web pages</p>
+        </a>
+        
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-card border-css">
+          <div class="skill-header">
+            <i class="bi bi-filetype-css skill-icon" style="color:#1572b6"></i>
+            <span class="skill-name">CSS</span>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress" style="width: 80%; background-color: #1572b6;"></div>
+          </div>
+          <p class="skill-desc">Style sheet language for describing web presentation</p>
+        </a>
+        
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-card border-js">
+          <div class="skill-header">
+            <i class="bi bi-filetype-js skill-icon" style="color:#f7df1e"></i>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-progress-bar">
+            <div class="skill-progress" style="width: 70%; background-color: #f7df1e;"></div>
+          </div>
+          <p class="skill-desc">High-level programming language for web interactivity</p>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Projects Section -->
+    <div class="projects-section" id="projects">
+      <h1 class="section-title">Projects</h1>
+      <hr class="separator">
+      <div class="projects-grid">
+        <div class="skill-card border-project1">
+          <div class="skill-header">
+            <i class="bi bi-globe skill-icon" style="color:#0073e6"></i>
+            <span class="skill-name">Personal Website</span>
+          </div>
+          <p class="skill-desc">Responsive portfolio website showcasing my skills and projects</p>
+        </div>
+        
+        <div class="skill-card border-project2">
+          <div class="skill-header">
+            <i class="bi bi-card-checklist skill-icon" style="color:#40c057"></i>
+            <span class="skill-name">Todo App</span>
+          </div>
+          <p class="skill-desc">Task management application with local storage</p>
+        </div>
+        
+        <div class="skill-card border-project3">
+          <div class="skill-header">
+            <i class="bi bi-controller skill-icon" style="color:#fd7e14"></i>
+            <span class="skill-name">Mini Game</span>
+          </div>
+          <p class="skill-desc">Interactive browser game built with vanilla JavaScript</p>
+        </div>
+
+        <div class="skill-card border-project4">
+          <div class="skill-header">
+            <i class="bi bi-shop skill-icon" style="color:#7c3aed"></i>
+            <span class="skill-name">E-Commerce Store</span>
+          </div>
+          <p class="skill-desc">Full-stack shopping platform with payment integration</p>
+        </div>
+
+        <div class="skill-card border-project5">
+          <div class="skill-header">
+            <i class="bi bi-chat-dots skill-icon" style="color:#ec4899"></i>
+            <span class="skill-name">Chat Application</span>
+          </div>
+          <p class="skill-desc">Real-time messaging app with WebSocket support</p>
+        </div>
+
+        <div class="skill-card border-project6">
+          <div class="skill-header">
+            <i class="bi bi-calendar-event skill-icon" style="color:#10b981"></i>
+            <span class="skill-name">Event Planner</span>
+          </div>
+          <p class="skill-desc">Calendar-based event management system</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Courses Section -->
+    <div class="courses-section" id="courses">
+      <h1 class="section-title">Courses</h1>
+      <hr class="separator">
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-code course-icon"></i>
+            <span class="course-name">Advanced Web Development</span>
+          </div>
+          <p class="course-desc">Comprehensive course covering modern web technologies</p>
+          <button class="show-certificate-btn">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-check course-icon"></i>
+            <span class="course-name">TypeScript Fundamentals</span>
+          </div>
+          <p class="course-desc">Learn TypeScript from basics to advanced concepts</p>
+          <button class="show-certificate-btn">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-bookmark course-icon"></i>
+            <span class="course-name">UI/UX Design with CSS</span>
+          </div>
+          <p class="course-desc">Master modern CSS techniques and design principles</p>
+          <button class="show-certificate-btn">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-album course-icon"></i>
+            <span class="course-name">Angular Complete Guide</span>
+          </div>
+          <p class="course-desc">Deep dive into Angular framework and best practices</p>
+          <button class="show-certificate-btn">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-text course-icon"></i>
+            <span class="course-name">JavaScript Advanced</span>
+          </div>
+          <p class="course-desc">Advanced JavaScript patterns and ES6+ features</p>
+          <button class="show-certificate-btn">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-richtext course-icon"></i>
+            <span class="course-name">Full Stack Development</span>
+          </div>
+          <p class="course-desc">End-to-end web application development with Node.js</p>
+          <button class="show-certificate-btn">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Contact Section -->
+  <section class="container py-4">
+    <h2 class="contact-main-title text-center">Contact Me</h2>
+    <div class="contact-card">
+      <div class="contact-left">
+        <h3 class="contact-title">Feel free to contact me</h3>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" class="form-control" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" class="form-control" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" class="form-control" type="email" required>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-right">
+        <h3 class="contact-title">Contact Me</h3>
+        <p class="contact-info"><strong>Phone:</strong><br>+1 234 567 890</p>
+        <p class="contact-info"><strong>Email:</strong><br>you@example.com</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

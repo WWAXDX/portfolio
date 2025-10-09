@@ -1,0 +1,54 @@
+<section class="container py-4">
+  <div class="about-card">
+    <div class="about-left">
+      <h3 class="about-title bungee-regular">About Me</h3>
+  <p class="about-description noto-kufi">I've loved programming and development since I was a child, and I've always worked hard to grow and improve this skill.</p>
+  <p class="about-description noto-kufi">I have experience meeting job requirements and solving problems as quickly as possible. I am also skilled at teamwork and organization.</p>
+  <p class="about-description noto-kufi">I am a developer who has been passionate about technology since childhood. I enjoy turning ideas into practical and useful applications. I focus on writing clean, maintainable code and pay close attention to user experience and app performance.</p>
+  <p class="about-description noto-kufi">I primarily work with HTML, CSS, JavaScript, and Angular. I have experience building interactive user interfaces, organizing projects, and collaborating within both small and large teams.</p>
+  <p class="about-description noto-kufi">I love challenges and problem-solving, and I continuously strive to learn new technologies and improve my skills. My goal is to develop technical solutions that enhance user experience and help achieve project objectives.</p>
+    </div>
+    <aside class="about-right">
+      <h3 class="basic-info-title noto-kufi">Basic Information</h3>
+      <ul class="basic-info-list noto-kufi">
+        <li><strong>Birthdate:</strong> 08 Jun 2005</li>
+        <li><strong>Email:</strong> you@example.com</li>
+        <li><strong>Phone:</strong> +1 234 567 890</li>
+        <li><strong>Location:</strong> City, Country</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- Contact card -->
+<section class="container py-4">
+  <h2 class="contact-main-title text-center">Contact Me</h2>
+  <div class="contact-card">
+    <div class="contact-left">
+      <h3 class="contact-title">Feel free to contact me</h3>
+      <form class="contact-form" (submit)="onSubmit($event)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" class="form-control" type="text" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" class="form-control" type="text" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" class="form-control" type="email" required />
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-right">
+      <h3 class="contact-title">Contact Me</h3>
+      <p class="contact-info"><strong>Phone:</strong><br>+1 234 567 890</p>
+      <p class="contact-info"><strong>Email:</strong><br>you@example.com</p>
+    </div>
+  </div>
+</section>
+

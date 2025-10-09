@@ -1,0 +1,47 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.footer {
+  background-color: rgb(23, 53, 97) !important;
+  
+}
+
+#app-root { 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main {
+  flex: 1; 
+}
+
+.footer-socials {
+  display: inline-flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  color: #ffffff; 
+  font-size: 1.35rem;
+  text-decoration: none;
+  transition: transform 150ms ease, color 150ms ease;
+}
+
+.social-link:hover {
+  color: #bdbdbd;
+  transform: translateY(-3px);
+}
+
+.social-link .bi {
+  vertical-align: middle;
+}
+
+.text-muted {
+  color: #ffffff !important;
+}
