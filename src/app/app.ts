@@ -1,17 +1,29 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MainPagePortfolio } from './main-page-portfolio/main-page-portfolio';
 import { HeaderPortfolio } from './header-portfolio/header-portfolio';
 import { FooterPortfolio } from './footer-portfolio/footer-portfolio';
-import { AboutMe } from './about-me/about-me';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MainPagePortfolio, HeaderPortfolio, FooterPortfolio, AboutMe],
+  imports: [RouterOutlet, HeaderPortfolio, FooterPortfolio],
     templateUrl: './app.html',
     styleUrl: './app.css'
 })
-export class App {
+export class App implements OnInit {
   protected readonly title = signal('my-portfolio');
+  protected readonly showModal = signal(false);
+
+  ngOnInit() {
+    // Check if user has seen the modal before
+    const hasSeenModal = localStorage.getItem('hasSeenWelcomeModal');
+    if (!hasSeenModal) {
+      this.showModal.set(true);
+    }
+  }
+
+  protected closeModal() {
+    this.showModal.set(false);
+    localStorage.setItem('hasSeenWelcomeModal', 'true');
+  }
 }

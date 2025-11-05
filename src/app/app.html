@@ -3,3 +3,21 @@
     <router-outlet></router-outlet>
   </main>
   <app-footer-portfolio> </app-footer-portfolio>
+
+  <!-- Welcome Modal -->
+  @if (showModal()) {
+    <div class="modal-overlay" (click)="closeModal()">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <div class="modal-header">
+          <h2>Notice</h2>
+          <button class="close-btn" (click)="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>The website is not complete and the information in it is not real yet and will be changed upon completion.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-primary" (click)="closeModal()">I Understand</button>
+        </div>
+      </div>
+    </div>
+  }
