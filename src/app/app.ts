@@ -20,8 +20,6 @@ export class App implements OnInit {
     if (!hasSeenModal) {
       this.showModal.set(true);
     }
-    // Temporary: Always show modal for testing (remove this line later)
-    this.showModal.set(true);
   }
 
   protected closeModal() {
