@@ -45,3 +45,34 @@ main {
 .text-muted {
   color: #ffffff !important;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .footer-socials {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0.5rem !important;
+  }
+  
+  .footer-socials {
+    gap: 12px;
+  }
+  
+  .social-link {
+    font-size: 1.1rem;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem !important;
+    text-align: center;
+  }
+}

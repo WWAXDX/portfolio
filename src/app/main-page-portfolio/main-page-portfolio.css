@@ -103,6 +103,8 @@ html {
 .profile-socials {
   gap: 12px;
   margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .profile-social-link {
@@ -116,6 +118,7 @@ html {
   border-radius: 8px;
   transition: all 0.2s;
   background: rgba(255,255,255,0.95);
+  flex-shrink: 0;
 }
 
 .profile-social-link:hover {
@@ -425,9 +428,11 @@ div.skill-card:hover {
   .projects-grid,
   .courses-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
   .main-column-page {
-    gap: 6rem;
+    gap: 4rem;
+    padding: 0 0.75rem;
   }
 }
 
@@ -440,6 +445,7 @@ div.skill-card:hover {
   
   .profile-name {
     font-size: 2.2rem;
+    line-height: 1.2;
   }
   
   .profile-subtitle {
@@ -449,19 +455,162 @@ div.skill-card:hover {
   .profile-description {
     font-size: 1rem;
     max-width: 100%;
+    line-height: 1.6;
   }
   
   .profile-circle-big {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
+    font-size: 5rem;
   }
   
   .contact-card {
     flex-direction: column;
+    gap: 15px;
+    padding: 18px;
   }
   
   .profile-section-wrapper {
-    padding: 60px 15px;
+    padding: 50px 15px;
+  }
+  
+  .main-column-page {
+    gap: 3rem;
+    padding: 0 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .skill-card {
+    padding: 15px;
+  }
+  
+  .skill-name {
+    font-size: 1.1rem;
+  }
+  
+  .course-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid,
+  .projects-grid,
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .profile-name {
+    font-size: 1.8rem;
+  }
+  
+  .profile-subtitle {
+    font-size: 1rem;
+  }
+  
+  .profile-description {
+    font-size: 0.9rem;
+  }
+  
+  .profile-circle-big {
+    width: 160px;
+    height: 160px;
+    font-size: 4rem;
+  }
+  
+  .profile-section-wrapper {
+    padding: 40px 10px;
+  }
+  
+  .main-column-page {
+    gap: 2.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .skill-card {
+    padding: 12px;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+  }
+  
+  .skill-desc {
+    font-size: 0.9rem;
+  }
+  
+  .course-card {
+    padding: 14px;
+  }
+  
+  .course-name {
+    font-size: 1.1rem;
+  }
+  
+  .course-desc {
+    font-size: 0.9rem;
+  }
+  
+  .contact-card {
+    padding: 15px;
+  }
+  
+  .contact-title {
+    font-size: 1.3rem;
+  }
+  
+  .contact-main-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .profile-name {
+    font-size: 1.6rem;
+  }
+  
+  .profile-circle-big {
+    width: 140px;
+    height: 140px;
+    font-size: 3.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .main-column-page {
+    gap: 2rem;
+    padding: 0;
+  }
+  
+  .profile-socials {
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .profile-social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .separator {
+    width: 90%;
+  }
+  
+  .skills-section,
+  .projects-section,
+  .courses-section {
+    padding: 0 0.5rem;
   }
 }
 

@@ -52,9 +52,35 @@ body{
 
 @media (max-width: 768px) {
   .nav-links {
-    gap: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .header1 {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .navbar {
+    padding: 0.5rem 0.25rem;
+  }
+  .container-fluid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .d-flex.align-items-center.gap-2.position-absolute.end-0.me-3 {
+    position: relative !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+  .header1 {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  .nav-links a {
+    padding: 4px 6px;
   }
 }
