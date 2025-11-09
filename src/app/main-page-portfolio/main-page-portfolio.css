@@ -79,6 +79,23 @@ html {
   height: 280px;
   font-size: 6rem;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  overflow: hidden; /* لإخفاء أي جزء يخرج عن الدائرة */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* لضمان ملء الدائرة بالكامل */
+  object-position: center; /* توسيط الصورة */
+  border-radius: 50%; /* جعل الصورة دائرية */
+}
+
+/* أيقونة احتياطية إذا لم تعمل الصورة */
+.profile-circle-big .bi-person {
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-socials {
@@ -570,6 +587,13 @@ div.skill-card:hover {
     font-size: 5rem;
   }
   
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
   .cv-download-btn {
     padding: 6px 12px;
     font-size: 12px;
@@ -641,6 +665,13 @@ div.skill-card:hover {
     width: 160px;
     height: 160px;
     font-size: 4rem;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   
   .cv-download-btn {
@@ -738,6 +769,13 @@ div.skill-card:hover {
     width: 140px;
     height: 140px;
     font-size: 3.5rem;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   
   .cv-download-btn {

@@ -18,7 +18,9 @@
       <div class="profile-section">
         <div class="profile-image-container text-center">
           <div class="profile-circle-big d-flex align-items-center justify-content-center bg-light border rounded-circle mx-auto">
-            <i class="bi bi-person"></i>
+            <img src="/assets/Planet.jpg" alt="Profile Picture" class="profile-image" 
+                 onerror="this.src='./Planet.jpg'; this.onerror=function(){this.src='assets/Planet.jpg'; this.onerror=function(){this.style.display='none'; this.nextElementSibling.style.display='flex'}};">
+            <i class="bi bi-person" style="display: none; font-size: 6rem; color: #6c757d;"></i>
           </div>
           <h1 class="profile-name mt-3">{{ translate.translate('MyName') }}</h1>
           <p class="profile-subtitle">{{ translate.translate('developer') }}</p>
