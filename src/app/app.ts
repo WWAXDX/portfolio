@@ -2,6 +2,7 @@ import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderPortfolio } from './header-portfolio/header-portfolio';
 import { FooterPortfolio } from './footer-portfolio/footer-portfolio';
+import { TranslationService } from './translation.service';
 
 
 @Component({
@@ -13,6 +14,8 @@ import { FooterPortfolio } from './footer-portfolio/footer-portfolio';
 export class App implements OnInit {
   protected readonly title = signal('my-portfolio');
   protected readonly showModal = signal(false);
+
+  constructor(protected translate: TranslationService) {}
 
   ngOnInit() {
     // Check if user has seen the modal before

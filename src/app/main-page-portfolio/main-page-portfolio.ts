@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-main-page-portfolio',
@@ -8,14 +9,31 @@ import { Component } from '@angular/core';
 })
 export class MainPagePortfolio {
 
+  constructor(protected translate: TranslationService) {}
+
   onSubmit(event: Event) {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
     const data = new FormData(form);
     const payload = Object.fromEntries(data.entries());
     console.log('Contact form submitted', payload);
-    alert('Message sent (demo)');
+    alert(this.translate.translate('messageSent'));
     form.reset();
+  }
+
+  downloadCV() {
+    // يمكنك وضع رابط ملف السيرة الذاتية هنا
+    const cvUrl = 'assets/Abdullah_CV.pdf'; // ضع ملف السيرة الذاتية في مجلد assets
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Abdullah_CV.pdf';
+    link.click();
+  }
+
+  viewCV() {
+    // فتح ملف السيرة الذاتية في نافذة جديدة
+    const cvUrl = 'assets/Abdullah_CV.pdf'; // ضع ملف السيرة الذاتية في مجلد assets
+    window.open(cvUrl, '_blank');
   }
   
 }

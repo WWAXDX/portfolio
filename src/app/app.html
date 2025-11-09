@@ -9,16 +9,16 @@
     <div class="modal-overlay" (click)="closeModal()">
       <div class="modal-content" (click)="$event.stopPropagation()">
         <div class="modal-header">
-          <h2>Notice</h2>
+          <h2>{{ translate.translate('notice') }}</h2>
           <button class="close-btn" (click)="closeModal()">&times;</button>
         </div>
         <div class="modal-body">
-          <p><strong>Important Notice:</strong></p>
-          <p>This website is currently under development. The information displayed here is not real and will be updated upon completion of the project.</p>
-          <p>Thank you for your understanding! 🚧</p>
+          <p><strong>{{ translate.translate('importantNotice') }}</strong></p>
+          <p>{{ translate.translate('websiteInDevelopment') }}</p>
+          <p>{{ translate.translate('thankYou') }}</p>
         </div>
         <div class="modal-footer">
-          <button class="btn-primary" (click)="closeModal()">I Understand</button>
+          <button class="btn-primary" (click)="closeModal()">{{ translate.translate('iUnderstand') }}</button>
         </div>
       </div>
     </div>

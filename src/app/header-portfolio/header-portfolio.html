@@ -9,19 +9,25 @@
 <nav class="navbar navbar-light px-3">
   <div class="container-fluid justify-content-center">
     <div class="d-flex gap-5 align-items-center nav-links">
-      <a class="header1 text-decoration-none" routerLink="/">Home</a>
-      <a class="header1 text-decoration-none" href="#projects" (click)="scrollToSection($event, 'projects')">Projects</a>
-      <a class="header1 text-decoration-none" href="#courses" (click)="scrollToSection($event, 'courses')">Courses</a>
-      <a class="header1 text-decoration-none" routerLink="/about-me">About</a>
+      <a class="header1 text-decoration-none" routerLink="/">
+        {{ translate.translate('home') }}
+      </a>
+      <a class="header1 text-decoration-none" href="#projects" (click)="scrollToSection($event, 'projects')">
+        {{ translate.translate('projects') }}
+      </a>
+      <a class="header1 text-decoration-none" href="#courses" (click)="scrollToSection($event, 'courses')">
+        {{ translate.translate('courses') }}
+      </a>
+      <a class="header1 text-decoration-none" href="#about" (click)="scrollToSection($event, 'about')">
+        {{ translate.translate('about') }}
+      </a>
     </div>
   </div>
 
-  <div class="d-flex align-items-center gap-2 position-absolute end-0 me-3">
-    <button class="btn btn-light rounded-circle border" (click)="toggleLang()" title="Language">
-      <i class="bi bi-translate"></i>
-    </button>
-    <button class="btn btn-light rounded-circle border" (click)="toggleDark()" title="DarkMode">
-      <i class="bi bi-moon-fill"></i>
+  <div class="header-buttons d-flex align-items-center gap-3 position-absolute end-0 me-3">
+    <button class="language-toggle-btn" (click)="toggleLang()" [title]="translate.translate('switchLanguage')">
+      <span class="lang-icon">🌐</span>
+      <span class="lang-text">{{ currentLang }}</span>
     </button>
   </div>
 </nav>

@@ -16,31 +16,52 @@
     <!-- Profile Section -->
     <div class="profile-section-wrapper">
       <div class="profile-section">
-        <div class="profile-info">
-          <h1 class="profile-name">Abdullah</h1>
-          <p class="profile-subtitle">Web Developer & Designer</p>
-          <p class="profile-description">
-            Passionate about creating beautiful and functional web experiences. 
-            Specialized in modern web technologies including Angular, TypeScript, and responsive design.
-          </p>
-        </div>
-        
-        <div class="profile-image-container">
-          <div class="profile-circle-big d-flex align-items-center justify-content-center bg-light border rounded-circle">
+        <div class="profile-image-container text-center">
+          <div class="profile-circle-big d-flex align-items-center justify-content-center bg-light border rounded-circle mx-auto">
             <i class="bi bi-person"></i>
           </div>
-          <div class="profile-socials d-flex justify-content-center mt-3 gap-2">
+          <h1 class="profile-name mt-3">{{ translate.translate('MyName') }}</h1>
+          <p class="profile-subtitle">{{ translate.translate('developer') }}</p>
+          
+          <div class="profile-socials d-flex justify-content-center mt-3 gap-3">
             <a class="profile-social-link" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             <a class="profile-social-link" href="https://github.com/WWAXDX" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
             <a class="profile-social-link" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           </div>
+
+          <div class="cv-button-container mt-3">
+            <button class="cv-download-btn" (click)="viewCV()">
+              {{ translate.translate('myCV') }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section" id="about">
+      <h1 class="section-title">{{ translate.translate('aboutMe') }}</h1>
+      <hr class="separator">
+      <div class="about-content">
+        <div class="about-left">
+          <p class="about-description">{{ translate.translate('welcomeMessage') }}</p>
+          <p class="about-description">{{ translate.translate('additionalInfo') }}</p>
+        </div>
+        <div class="about-right">
+          <h3 class="basic-info-title">{{ translate.translate('basicInfo') }}</h3>
+          <ul class="basic-info-list">
+            <li><strong>{{ translate.translate('birthdate') }}:</strong> 08 Jun 2005</li>
+            <li><strong>{{ translate.translate('email') }}:</strong> mycontactmailpa@gmail.com</li>
+            <li><strong>{{ translate.translate('phone') }}:</strong> +966 553278973</li>
+            <li><strong>{{ translate.translate('location') }}:</strong> Saudi Arabia / Riyadh</li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Skills Section -->
     <div class="skills-section">
-      <h1 class="section-title">Skills</h1>
+      <h1 class="section-title">{{ translate.translate('skills') }}</h1>
       <hr class="separator">
       <div class="skills-grid">
         <a href="https://www.typescriptlang.org/" target="_blank" class="skill-card border-ts">
@@ -113,7 +134,7 @@
     
     <!-- Projects Section -->
     <div class="projects-section" id="projects">
-      <h1 class="section-title">Projects</h1>
+      <h1 class="section-title">{{ translate.translate('myProjects') }}</h1>
       <hr class="separator">
       <div class="projects-grid">
         <div class="skill-card border-project1">
@@ -168,7 +189,7 @@
     
     <!-- Courses Section -->
     <div class="courses-section" id="courses">
-      <h1 class="section-title">Courses</h1>
+      <h1 class="section-title">{{ translate.translate('myCourses') }}</h1>
       <hr class="separator">
       <div class="courses-grid">
         <div class="course-card">
@@ -249,32 +270,32 @@
 
   <!-- Contact Section -->
   <section class="container py-4">
-    <h2 class="contact-main-title text-center">Contact Me</h2>
+    <h2 class="contact-main-title text-center">{{ translate.translate('contact') }}</h2>
     <div class="contact-card">
       <div class="contact-left">
-        <h3 class="contact-title">Feel free to contact me</h3>
-        <form class="contact-form">
+        <h3 class="contact-title">{{ translate.translate('getInTouch') }}</h3>
+        <form class="contact-form" (submit)="onSubmit($event)">
           <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">{{ translate.translate('name') }}</label>
             <input id="name" name="name" class="form-control" type="text" required>
           </div>
           <div class="form-group">
-            <label for="subject">Subject</label>
+            <label for="subject">{{ translate.translate('subject') }}</label>
             <input id="subject" name="subject" class="form-control" type="text" required>
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">{{ translate.translate('email') }}</label>
             <input id="email" name="email" class="form-control" type="email" required>
           </div>
           <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-primary" type="submit">{{ translate.translate('sendMessage') }}</button>
           </div>
         </form>
       </div>
       <div class="contact-right">
-        <h3 class="contact-title">Contact Me</h3>
-        <p class="contact-info"><strong>Phone:</strong><br>+1 234 567 890</p>
-        <p class="contact-info"><strong>Email:</strong><br>you@example.com</p>
+        <h3 class="contact-title">{{ translate.translate('contactInfo') }}</h3>
+        <p class="contact-info"><strong>{{ translate.translate('phone') }}:</strong><br>+966 553278973</p>
+        <p class="contact-info"><strong>{{ translate.translate('email') }}:</strong><br>mycontactmailpa@gmail.com</p>
       </div>
     </div>
   </section>
