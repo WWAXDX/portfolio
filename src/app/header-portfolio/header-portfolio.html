@@ -9,8 +9,11 @@
 <nav class="navbar navbar-light px-3">
   <div class="container-fluid justify-content-center">
     <div class="d-flex gap-5 align-items-center nav-links">
-      <a class="header1 text-decoration-none" routerLink="/">
+      <a class="header1 text-decoration-none" href="#" (click)="scrollToTop($event)">
         {{ translate.translate('home') }}
+      </a>
+      <a class="header1 text-decoration-none" href="#Skills" (click)="scrollToSection($event, 'Skills')">
+        {{ translate.translate('Skills') }}
       </a>
       <a class="header1 text-decoration-none" href="#projects" (click)="scrollToSection($event, 'projects')">
         {{ translate.translate('projects') }}

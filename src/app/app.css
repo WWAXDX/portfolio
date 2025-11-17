@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden !important; /* Prevent horizontal scroll */
+  max-width: 100vw;
 }
 
 app-root {
@@ -9,6 +10,8 @@ app-root {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 main {

@@ -17,7 +17,7 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
-  padding-top: 0;
+  padding-top: 50px;
 }
 
 .profile-section-wrapper {
@@ -28,7 +28,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 20px 80px 20px;
+  padding: 80px 20px 80px 20px;
   position: relative;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
   margin-top: 0;
@@ -620,7 +620,7 @@ div.skill-card:hover {
   }
   
   .profile-section-wrapper {
-    padding: 50px 15px;
+    padding: 70px 15px;
   }
   
   .main-column-page {
@@ -711,7 +711,7 @@ div.skill-card:hover {
   }
   
   .profile-section-wrapper {
-    padding: 40px 10px;
+    padding: 60px 10px;
   }
   
   .main-column-page {

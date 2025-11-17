@@ -10,6 +10,7 @@ export class TranslationService {
     'EN': {
       // Header
         'home': 'Home',
+        'Skills': 'Skills',
         'projects': 'Projects',
         'courses': 'Courses',
         'about': 'About',
@@ -57,6 +58,7 @@ export class TranslationService {
     'العربية': {
       // Header
         'home': 'الرئيسية',
+        'Skills': 'المهارات',
         'projects': 'المشاريع',
         'courses': 'الدورات',
         'about': 'نبذة عني',

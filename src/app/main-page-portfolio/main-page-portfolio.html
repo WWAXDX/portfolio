@@ -62,7 +62,7 @@
     </div>
 
     <!-- Skills Section -->
-    <div class="skills-section">
+    <div class="skills-section" id="Skills">
       <h1 class="section-title">{{ translate.translate('skills') }}</h1>
       <hr class="separator">
       <div class="skills-grid">
@@ -150,20 +150,20 @@
         <div class="skill-card border-project2">
           <div class="skill-header">
             <i class="bi bi-card-checklist skill-icon" style="color:#40c057"></i>
-            <span class="skill-name">Todo App</span>
+            <span class="skill-name">Todo List</span>
           </div>
-          <p class="skill-desc">Task management application with local storage</p>
+          <p class="skill-desc">Todo website let you manage your tasks efficiently</p>
         </div>
         
         <div class="skill-card border-project3">
           <div class="skill-header">
-            <i class="bi bi-controller skill-icon" style="color:#fd7e14"></i>
-            <span class="skill-name">Mini Game</span>
+            <i class="bi bi-film skill-icon" style="color:#fd7e14"></i>
+            <span class="skill-name">Movie Finder</span>
           </div>
-          <p class="skill-desc">Interactive browser game built with vanilla JavaScript</p>
+          <p class="skill-desc">A website to search and discover movies</p>
         </div>
 
-        <div class="skill-card border-project4">
+       <!-- <div class="skill-card border-project4">
           <div class="skill-header">
             <i class="bi bi-shop skill-icon" style="color:#7c3aed"></i>
             <span class="skill-name">E-Commerce Store</span>
@@ -185,7 +185,7 @@
             <span class="skill-name">Event Planner</span>
           </div>
           <p class="skill-desc">Calendar-based event management system</p>
-        </div>
+        </div> -->
       </div>
     </div>
     
@@ -197,22 +197,34 @@
         <div class="course-card">
           <div class="course-header">
             <i class="bi bi-journal-code course-icon"></i>
-            <span class="course-name">Advanced Web Development</span>
+            <span class="course-name">APIs</span>
           </div>
-          <p class="course-desc">Comprehensive course covering modern web technologies</p>
-          <button class="show-certificate-btn">
+          <p class="course-desc">Learn how to design and use APIs effectively, including RESTful APIs.</p>
+          <button class="show-certificate-btn" (click)="showCertificate(1)">
             <i class="bi bi-file-earmark-text"></i>
             Show Certificate
           </button>
         </div>
-        
+
+        <div class="course-card">
+          <div class="course-header">
+            <i class="bi bi-journal-richtext course-icon"></i>
+            <span class="course-name">Cybersecurity Essentials</span>
+          </div>
+          <p class="course-desc">Course covering fundamental cybersecurity concepts and practices</p>
+          <button class="show-certificate-btn" (click)="showCertificate(6)">
+            <i class="bi bi-file-earmark-text"></i>
+            Show Certificate
+          </button>
+        </div>
+        <!--
         <div class="course-card">
           <div class="course-header">
             <i class="bi bi-journal-check course-icon"></i>
             <span class="course-name">TypeScript Fundamentals</span>
           </div>
           <p class="course-desc">Learn TypeScript from basics to advanced concepts</p>
-          <button class="show-certificate-btn">
+          <button class="show-certificate-btn" (click)="showCertificate(2)">
             <i class="bi bi-file-earmark-text"></i>
             Show Certificate
           </button>
@@ -224,7 +236,7 @@
             <span class="course-name">UI/UX Design with CSS</span>
           </div>
           <p class="course-desc">Master modern CSS techniques and design principles</p>
-          <button class="show-certificate-btn">
+          <button class="show-certificate-btn" (click)="showCertificate(3)">
             <i class="bi bi-file-earmark-text"></i>
             Show Certificate
           </button>
@@ -236,7 +248,7 @@
             <span class="course-name">Angular Complete Guide</span>
           </div>
           <p class="course-desc">Deep dive into Angular framework and best practices</p>
-          <button class="show-certificate-btn">
+          <button class="show-certificate-btn" (click)="showCertificate(4)">
             <i class="bi bi-file-earmark-text"></i>
             Show Certificate
           </button>
@@ -248,23 +260,11 @@
             <span class="course-name">JavaScript Advanced</span>
           </div>
           <p class="course-desc">Advanced JavaScript patterns and ES6+ features</p>
-          <button class="show-certificate-btn">
+          <button class="show-certificate-btn" (click)="showCertificate(5)">
             <i class="bi bi-file-earmark-text"></i>
             Show Certificate
           </button>
-        </div>
-
-        <div class="course-card">
-          <div class="course-header">
-            <i class="bi bi-journal-richtext course-icon"></i>
-            <span class="course-name">Full Stack Development</span>
-          </div>
-          <p class="course-desc">End-to-end web application development with Node.js</p>
-          <button class="show-certificate-btn">
-            <i class="bi bi-file-earmark-text"></i>
-            Show Certificate
-          </button>
-        </div>
+        </div> -->
       </div>
     </div>
 

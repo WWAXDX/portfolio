@@ -22,8 +22,7 @@ export class MainPagePortfolio {
   }
 
   downloadCV() {
-    // يمكنك وضع رابط ملف السيرة الذاتية هنا
-    const cvUrl = 'assets/Abdullah_CV.pdf'; // ضع ملف السيرة الذاتية في مجلد assets
+    const cvUrl = 'assets/Abdullah_CV.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = 'Abdullah_CV.pdf';
@@ -31,9 +30,26 @@ export class MainPagePortfolio {
   }
 
   viewCV() {
-    // فتح ملف السيرة الذاتية في نافذة جديدة
-    const cvUrl = 'assets/Abdullah_CV.pdf'; // ضع ملف السيرة الذاتية في مجلد assets
+    const cvUrl = 'assets/Abdullah_CV.pdf';
     window.open(cvUrl, '_blank');
+  }
+
+  showCertificate(certificateNumber: number) {
+    let pdfUrl = '';
+    
+    switch(certificateNumber) {
+      case 1:
+        pdfUrl = 'assets/Coursera certificate APIs.pdf';
+        break;
+      case 6:
+        pdfUrl = 'assets/Cybersecurity Essentials.pdf';
+        break;
+      default:
+        alert(this.translate.translate('certificateNotAvailable') || 'Certificate not available yet');
+        return;
+    }
+    
+    window.open(pdfUrl, '_blank');
   }
   
 }

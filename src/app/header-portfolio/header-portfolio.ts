@@ -1,15 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, signal, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { ThemeService } from '../theme.service';
 import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-header-portfolio',
-  imports: [RouterLink],
   templateUrl: './header-portfolio.html',
   styleUrl: './header-portfolio.css'
 })
-export class HeaderPortfolio {
+export class HeaderPortfolio implements OnInit, OnDestroy {
   constructor(
     private theme: ThemeService,
     protected translate: TranslationService
@@ -18,6 +16,34 @@ export class HeaderPortfolio {
     const savedLang = localStorage.getItem('preferredLanguage') as 'EN' | 'العربية' || 'EN';
     this.translate.setLanguage(savedLang);
     this.applyLanguage(savedLang);
+  }
+
+  ngOnInit() {
+    this.updateHeaderOnScroll();
+  }
+
+  ngOnDestroy() {
+    // Clean up if needed
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.updateHeaderOnScroll();
+  }
+
+  private updateHeaderOnScroll() {
+    const navbar = document.querySelector('.navbar') as HTMLElement;
+    if (navbar) {
+      if (window.scrollY > 50) {
+        navbar.style.backgroundColor = 'rgba(23, 53, 97, 0.95)';
+        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.2)';
+      } else {
+        navbar.style.backgroundColor = 'rgb(23, 53, 97)';
+        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+      }
+    }
   }
 
   get currentLang() {
@@ -69,5 +95,14 @@ export class HeaderPortfolio {
     } else {
       window.location.href = `/#${sectionId}`;
     }
+  }
+
+  scrollToTop(event: Event): void {
+    event.preventDefault();
+    
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 }
