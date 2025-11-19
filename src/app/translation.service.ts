@@ -36,6 +36,7 @@ export class TranslationService {
         'message': 'Message',
         'sendMessage': 'Send Message',
         'messageSent': 'Message sent (demo)',
+        "showCertificate": "Show Certificate",
       
       // Modal
         'notice': 'Notice',
@@ -84,6 +85,7 @@ export class TranslationService {
         'message': 'الرسالة',
         'sendMessage': 'إرسال الرسالة',
         'messageSent': 'تم إرسال الرسالة (تجريبي)',
+        "showCertificate": "عرض الشهادة",
       
       // Modal
         'notice': 'إشعار',

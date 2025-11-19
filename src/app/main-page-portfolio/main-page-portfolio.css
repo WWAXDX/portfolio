@@ -428,7 +428,7 @@ div.skill-card:hover {
 .show-certificate-btn {
   margin-top: 8px;
   padding: 10px 18px;
-  background-color: #007bff;
+  background-color: rgb(23, 53, 97);
   color: white;
   border: none;
   border-radius: 6px;
