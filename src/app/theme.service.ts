@@ -17,7 +17,6 @@ export class ThemeService {
     try {
       localStorage.setItem(this.storageKey, isDark ? 'dark' : 'light');
     } catch (e) {
-      // ignore storage errors
     }
   }
 

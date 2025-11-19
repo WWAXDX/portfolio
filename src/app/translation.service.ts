@@ -54,7 +54,8 @@ export class TranslationService {
         'aboutDescription5': 'I love challenges and problem-solving, and I continuously strive to learn new technologies and improve my skills. My goal is to develop technical solutions that enhance user experience and help achieve project objectives.',
         'basicInfo': 'Basic Information',
         'birthdate': 'Birthdate',
-        'location': 'Location'
+        'location': 'Location',
+        'copyright': '© 2025 Abdullah. All rights reserved.'
     },
     'العربية': {
       // Header
@@ -85,7 +86,7 @@ export class TranslationService {
         'message': 'الرسالة',
         'sendMessage': 'إرسال الرسالة',
         'messageSent': 'تم إرسال الرسالة (تجريبي)',
-        "showCertificate": "عرض الشهادة",
+        'showCertificate': 'عرض الشهادة',
       
       // Modal
         'notice': 'إشعار',
@@ -103,7 +104,8 @@ export class TranslationService {
         'aboutDescription5': 'أحب التحديات وحل المشاكل، وأسعى باستمرار لتعلم تقنيات جديدة وتحسين مهاراتي. هدفي هو تطوير حلول تقنية تعزز تجربة المستخدم وتساعد في تحقيق أهداف المشروع.',
         'basicInfo': 'المعلومات الأساسية',
         'birthdate': 'تاريخ الميلاد',
-        'location': 'الموقع'
+        'location': 'الموقع',
+        'copyright': '© 2025 عبدالله. جميع الحقوق محفوظة.'
     }
   };
 

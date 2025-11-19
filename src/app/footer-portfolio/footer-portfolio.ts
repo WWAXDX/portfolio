@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-footer-portfolio',
@@ -7,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer-portfolio.css'
 })
 export class FooterPortfolio {
-
-
-
+  protected readonly translationService = inject(TranslationService);
 }
